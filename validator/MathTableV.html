@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+
+<head>
+<title>Test Table</title>
+<!--meta charset="utf-8" /-->
+<script type="text/javascript">
+    function calculate() {
+        var table = document.getElementById("numTable");
+        var row = table.insertRow();
+        var cell0 = row.insertCell();
+        var cell1 = row.insertCell();
+        var cell2 = row.insertCell();
+        var cell3 = row.insertCell();
+        var cell4 = row.insertCell();
+        var cell5 = row.insertCell();
+        var cell6 = row.insertCell();
+        var cell7 = row.insertCell();
+        cell0.innerHTML = "Square Root";
+        cell1.innerHTML = (Math.sqrt(2)).toFixed(2);
+        cell2.innerHTML = (Math.sqrt(3)).toFixed(3);
+        cell3.innerHTML = (Math.sqrt(4)).toFixed(4);
+        cell4.innerHTML = (Math.sqrt(5)).toFixed(5);
+        cell5.innerHTML = (Math.sqrt(6)).toFixed(6);
+        cell6.innerHTML = (Math.sqrt(7)).toFixed(7);
+        cell7.innerHTML = (Math.sqrt(8)).toFixed(8);
+      
+        var row = table.insertRow();
+        var cell0 = row.insertCell();
+        var cell1 = row.insertCell();
+        var cell2 = row.insertCell();
+        var cell3 = row.insertCell();
+        var cell4 = row.insertCell();
+        var cell5 = row.insertCell();
+        var cell6 = row.insertCell();
+        var cell7 = row.insertCell();
+        cell0.innerHTML = "Cube";
+        cell1.innerHTML = (Math.cbrt(2)).toFixed(2);
+        cell2.innerHTML = (Math.cbrt(3)).toFixed(3);
+        cell3.innerHTML = (Math.cbrt(4)).toFixed(4);
+        cell4.innerHTML = (Math.cbrt(5)).toFixed(5);
+        cell5.innerHTML = (Math.cbrt(6)).toFixed(6);
+        cell6.innerHTML = (Math.cbrt(7)).toFixed(7);
+        cell7.innerHTML = (Math.cbrt(8)).toFixed(8);
+    }
+</script>
+</head>
+
+<body>
+<h1>Math Table</h1>
+<p>
+    <input onclick="calculate()" type="button" value="Calculate" />
+</p>
+<table id="numTable" border="1">
+    <tbody>
+        <tr>
+            <th></th>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+
+</html>

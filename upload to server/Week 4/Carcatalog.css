@@ -1,0 +1,43 @@
+/*
+Austin Salameh - Bellevue University
+04/25/2020
+Assignment 4.2
+CSS design for carcatalog.xml  
+*/
+carcatalog{
+     background-color: silver;
+}
+h1 {
+     text-align: center;
+     color: rgb(0, 7, 7);
+     margin-top: 30px;
+     display: block;
+     text-transform: uppercase;
+     font-weight: 900;
+     font-family: monospace;
+     font-size: 38px;
+}
+
+car {
+      padding: 15px;
+      width: 250px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      background-color: rgb(134, 25, 25);
+      border-radius: 25px;
+      display: block;
+}
+
+h4 {
+     font-weight: 900;
+     font-family: monospace;
+}
+
+make, model, year, color, number_of_cylinders, fuel_system, number_of_doors, transmission_type, radio, air_conditioner, power_windows, power_steering, power_brakes {
+     display: block;
+     font-family: monospace;
+     font-size: 12pt;
+}
+

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 
+Austin Salameh - Bellevue University
+04/26/2020
+Assignment 4.2
+XML Schema for the CarCatalog 
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="carcatalog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="car" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name = "make" type="xs:string"/>
+              <xs:element name = "model" type="xs:string"/>
+              <xs:element name = "year" type="xs:string"/>
+              <xs:element name = "color" type="xs:string"/>
+
+              <xs:element name="engine">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="number_of_cylinders" type="xs:string"/>
+                    <xs:element name="fuel_system" maxOccurs="unbounded">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="Fuel Injected"/>
+                          <xs:enumeration value="Carbureted"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
+              <xs:element name = "number_of_doors" type="xs:positiveInteger"/>
+              <xs:element name = "transmission_type" type="xs:string"/>
+
+              <xs:element name = "accessories" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name = "radio" minOccurs="1">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="YES"/>
+                          <xs:enumeration value="NO"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name = "air_conditioning" minOccurs="1">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="YES"/>
+                          <xs:enumeration value="NO"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name = "power_windows" minOccurs="1">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="YES"/>
+                          <xs:enumeration value="NO"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name = "power_steering" minOccurs="1">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="YES"/>
+                          <xs:enumeration value="NO"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name = "power_brakes" minOccurs="1">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:enumeration value="YES"/>
+                          <xs:enumeration value="NO"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

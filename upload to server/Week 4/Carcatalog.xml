@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Link to .css File-->
+<?xml-stylesheet type="text/css" href="carcatalog.css"?>
+<!-- 
+Austin Salameh - Bellevue University
+04/25/2020
+Assignment 4.2
+XML Document with three instances of the car element defined in the XML schema
+-->
+
+<carcatalog
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="carcatalog.xsd">
+<h1>Cars Catalog</h1>
+<car>
+  <make><h4>Make:</h4>Honda</make>
+  <model><h4>Model:</h4>Accord</model>
+  <year><h4>Year:</h4>2012</year>
+  <color><h4>Color:</h4>White</color>
+  <engine>
+      <number_of_cylinders><h4>Cylinders:</h4>6</number_of_cylinders>
+      <fuel_system><h4>Fuel System:</h4>Fuel Injected</fuel_system>
+  </engine>
+  <number_of_doors><h4>Doors:</h4>4</number_of_doors>
+  <transmission_type><h4>Transmission:</h4>Automatic</transmission_type>
+  <accessories>
+      <radio><h4>Radio:</h4>YES</radio>
+      <air_conditioner><h4>Air Conditioning:</h4>YES</air_conditioner>
+      <power_windows><h4>Power Windows:</h4>YES</power_windows>
+      <power_steering><h4>Power Steering:</h4>YES</power_steering>
+      <power_brakes><h4>Power Brakes:</h4>YES</power_brakes>
+  </accessories>
+</car>
+
+<car>
+  <make><h4>Make:</h4>Ram</make>
+  <model><h4>Model:</h4>Laramie</model>
+  <year><h4>Year:</h4>2019</year>
+  <color><h4>Color:</h4>Gray</color>
+  <engine>
+      <number_of_cylinders><h4>Cylinders:</h4>8</number_of_cylinders>
+      <fuel_system><h4>Fuel System:</h4>Fuel Injected</fuel_system>
+  </engine>
+  <number_of_doors><h4>Doors:</h4>4</number_of_doors>
+  <transmission_type><h4>Transmission:</h4>Automatic</transmission_type>
+  <accessories>
+      <radio><h4>Radio:</h4>YES</radio>
+      <air_conditioner><h4>Air Conditioning:</h4>YES</air_conditioner>
+      <power_windows><h4>Power Windows:</h4>YES</power_windows>
+      <power_steering><h4>Power Steering:</h4>YES</power_steering>
+      <power_brakes><h4>Power Brakes:</h4>YES</power_brakes>
+  </accessories>
+</car>
+
+<car>
+  <make><h4>Make:</h4>Honda</make>
+  <model><h4>Model:</h4>Pilot</model>
+  <year><h4>Year:</h4>2019</year>
+  <color><h4>Color:</h4>Black</color>
+  <engine>
+      <number_of_cylinders><h4>Cylinders:</h4>6</number_of_cylinders>
+      <fuel_system><h4>Fuel System:</h4>Fuel Injected</fuel_system>
+  </engine>
+  <number_of_doors><h4>Doors:</h4>2</number_of_doors>
+  <transmission_type><h4>Transmission:</h4>Automatic</transmission_type>
+  <accessories>
+      <radio><h4>Radio:</h4>YES</radio>
+      <air_conditioner><h4>Air Conditioning:</h4>YES</air_conditioner>
+      <power_windows><h4>Power Windows:</h4>YES</power_windows>
+      <power_steering><h4>Power Steering:</h4>YES</power_steering>
+      <power_brakes><h4>Power Brakes:</h4>YES</power_brakes>
+  </accessories>
+</car>
+
+</carcatalog>

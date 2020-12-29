@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01//EN'
+  'http://www.w3.org/TR/1999/REC-html401-19991224/strict.dtd'>
+<!-- Austin Salameh - Bellevue University - 05/05/2020
+Assignment 6.2 - Part #1
+This HTML document will allow the user to enter as many digits as they want separated by spaces.  
+Once the numbers are entered, the user will click "submit".  This will call the referenced PHP file.
+.-->
+<html lang = "en">
+	<head>
+    <title> Random Greeting </title>
+    <meta charset = "utf-8" />
+	</head>
+	<body>
+	
+    <p>Enter in as many numbers as you'd like, separated by spaces:  </p>
+
+  <!-- submit button to calculate number string -->
+            <form action= "http://localhost/PHPvisualstudiocode/fourdigit.php" method="POST">
+            <input type= "text" name="numbers"/>
+	        <p><input type = "submit" value= "submit" name = "submit"></button> </p>
+	    </form>
+    </body>
+</html>
